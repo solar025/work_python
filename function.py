@@ -2,7 +2,7 @@ import work_file
 import Notes
 import Menu
 
-number = 6  # сколько знаков МИНИМУМ может быть в тексте заметки
+number = 6  # минимум знаков в заметке
 
 
 def add():
@@ -55,5 +55,5 @@ def id_edit_del_show(text):
             if text == 'show':
                 print(Notes.Note.map_note(notes))
     if logic == True:
-        print('Такой заметки нет, возможно, вы ввели неверный id')
+        print('Такой заметки нет, введите ещё раз id')
     work_file.write_file(array, 'a')
